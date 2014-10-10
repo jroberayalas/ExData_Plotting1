@@ -18,6 +18,7 @@ data$Date.Time <- paste(data$Date, data$Time, sep = " ")
 # Transform Date.Time column using lubridate
 data$Date.Time <- dmy_hms(data$Date.Time)
 
+# Plot the time series
 png(file = "ExData_Plotting1/plot2.png", bg = "transparent")
 with(data, plot(Date.Time, Global_active_power, 
                 type = "l",
