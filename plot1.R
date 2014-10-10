@@ -6,7 +6,7 @@ data <- read.csv.sql("Data/household_power_consumption.txt",
                      sep = ";", 
                      header = TRUE)
 
-png(file = "plot1.png", bg = "transparent")
+png(file = "ExData_Plotting1/plot1.png", bg = "transparent")
 hist(data$Global_active_power, 
      col = "red",
      main = "Global Active Power",
